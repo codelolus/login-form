@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap%27');
+
+:root {
+    /* FONT-SIZE */
+    --font-size-primary: 2rem;
+    --font-size-secondary: 1.1rem;
+    --font-size-tertiary: 0.8rem;
+
+    /* FONT-FAMILY */
+    --font-family: "Montserrat", sans-serif;
+
+    /* COLORS */
+    --background-color: #00000c;
+    --font-color: #ffffff;
+    --login-form-border-color: #3d0083;
+    --login-box-border-color: #b38ae2;
+}
+
+/* BODY */
+body {
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-primary);
+    background-color: var(--background-color);
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+/* LOGIN-BOX */
+.login-box {
+    width: 350px;
+    height: 500px;
+    border-radius: 3rem;
+    border: 2px solid var(--login-box-border-color);
+}
+
+/* LOGIN-NAME */
+.login-name {
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGIN-DESCRIPTION */
+.login-description {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: var(--font-size-secondary);
+}
+
+/* LOGIN-FORMS */
+.login-forms {
+    gap: 1rem;
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* LOGIN-SUBMIT */
+.login-submit {
+    display: flex;
+    margin-top: 4vh;
+    justify-content: center;
+}
+
+/* LOGIN-FOOTER */
+.login-footer {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(5vh);
+    font-size: var(--font-size-tertiary);
+}
+
+.login-footer>a {
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="password"] {
+    width: 265px;
+    height: 30px;
+    color: white;
+    background: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 2.3px solid var(--login-form-border-color);
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 35px;
+    color: #757575;
+    background: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 2.3px solid var(--login-form-border-color);
+}
